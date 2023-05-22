@@ -44,3 +44,6 @@ Thumbs.db
 *.db
 *.db-dhm
 *.db-wal
+
+*.EntityFramework
+*.json
