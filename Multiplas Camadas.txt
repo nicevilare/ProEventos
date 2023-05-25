@@ -1,0 +1,12 @@
+Multiplas camadas
+
+dotnet new sln -n ProEventos
+dotnet new classlib -n ProEventos.Persistence
+dotnet new classlib -n ProEventos.Domain
+dotnet new classlib -n ProEventos.Application
+dotnet sln ProEventos.sln add ProEventos.Application
+dotnet sln ProEventos.sln add ProEventos.Domain
+dotnet sln ProEventos.sln add ProEventos.Api
+dotnet sln ProEventos.sln add ProEventos.Persistence
+dotnet add ProEventos.API/ProEventos.API.csproj
+dotnet add ProEventos.API/ProEventos.API.csproj reference ProEventos.Application
