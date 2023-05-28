@@ -50,3 +50,6 @@ Thumbs.db
 
 \obj
 \bin
+
+node_modules
+*.angular
