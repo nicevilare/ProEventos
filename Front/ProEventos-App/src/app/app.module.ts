@@ -16,7 +16,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 import { CollapseModule } from 'ngx-bootstrap/collapse'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
 import { TituloComponent } from './shared/titulo/titulo.component';
 import { ContatosComponent } from './componentes/contatos/contatos.component';
@@ -61,7 +61,8 @@ import { RegistrationComponent } from './componentes/user/registration/registrat
       preventDuplicates: true,
       progressBar: true
     }),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
