@@ -27,6 +27,7 @@ import { EventoListaComponent } from './componentes/eventos/evento-lista/evento-
 import { UserComponent } from './componentes/user/user.component';
 import { LoginComponent } from './componentes/user/login/login.component';
 import { RegistrationComponent } from './componentes/user/registration/registration.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { RegistrationComponent } from './componentes/user/registration/registrat
       progressBar: true
     }),
     NgxSpinnerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
