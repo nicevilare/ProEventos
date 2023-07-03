@@ -28,6 +28,7 @@ import { UserComponent } from './componentes/user/user.component';
 import { LoginComponent } from './componentes/user/login/login.component';
 import { RegistrationComponent } from './componentes/user/registration/registration.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { LoteService } from './services/lote.service';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,9 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     ReactiveFormsModule,
     BsDatepickerModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    LoteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
